@@ -1,0 +1,18 @@
+apply plugin: 'java'
+apply from: 'gradle-mvn-push.gradle'
+
+targetCompatibility = '1.6'
+sourceCompatibility = '1.6'
+
+sourceSets {
+	main {
+		java {
+			srcDir 'src'
+		}
+	}
+}
+
+dependencies {
+    compile fileTree(include: '*.jar', dir: 'libs')
+    compile files('libs/sqlcipher.jar')
+}
