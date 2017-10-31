@@ -8,9 +8,9 @@
 	<meta-data
 		    android:name="AA_DB_PWD"
 		    android:value="alex"/>
-```
+
 或代码里面设置加密密码：<br>
-```
+
 	Configuration configuration=new Configuration.Builder(this)
                 .setDatabasePwd("password")
                 .create();
